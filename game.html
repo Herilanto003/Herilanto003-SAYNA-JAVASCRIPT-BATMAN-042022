@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- CECI EST LE CONT -->
+    <div class="container-fluid home_page">
+        
+        <div class="home_page_content">
+            <header class="container py-4" id="top_game">
+                <div class="header_content">
+                    <div class="row pt-4">
+                        <div class="col-6 d-flex justify-content-start align-items-center">
+                            <img src="./Assets/Logos/logohome.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <nav class="navbar navbar-expand-md">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item ml-2">
+                                      <a class="nav-link" href="game.html">GAME</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+                    </div>
+                </div>
+            </header>
+            <div class="lineheader" style="width:100%;height:4px; background-color:rgba(255, 255, 255, 0.1)"></div>
+            <!-- première section avec un petit texte et deux bouttons -->
+            <section id="intro" class="container mt-0">
+                <!-- les images cotes droites -->
+                <div class="image_droite">
+                    <div>
+                        <a href="#top_game"><img src="./Assets/Logos/logo_bat_flèche.png" alt="" id="fleche_top"></a>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <a href="#button_game"><img src="./Assets/Logos/logo_bat_flèche_2.png" alt="" id="fleche_b"></a>
+                    </div>
+                </div>
+
+                <div class="intro_content">
+                    <h1 class="titre">
+                        LET'S PLAY A <br> LITTLE GAME...
+                    </h1>
+
+                </div>
+        
+            </section>
+
+            <!-- la flèche qui pointe en bas après la première section -->
+            <div class="fleche">
+                <img src="./Assets/Logos/flèche_down_header.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- la section du QUIZZ -->
+    <section id="quiz" class="container-fluid">
+        <div class="home_page_content">
+            <div class="container primo_content py-4">
+                <div class="quiz_title">
+                    <h1 class="titre">QUIZ NIVEAU 1</h1>
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Quel est l'autre nom de l'Homme-Mystère
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c1_1" value="Le Sphinx">
+                            <label for="c1_1">Le Sphinx</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c1_2" value="Saphir">
+                            <label for="c1_2">Saphir</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c1_3" value="Le Joker">
+                            <label for="c1_3">Le Joker</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Quelle est l’ancienne profession de Harley Quinn ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c2_1" value="Infirmière">
+                            <label for="c2_1">Infirmière</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c2_2" value="Psychiatre">
+                            <label for="c2_2">Psychiatre</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c2_3" value="Dentiste">
+                            <label for="c2_3">Dentiste</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                            Quel est l’objet fétiche de Double Face ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c3_1">
+                            <label for="c3_1" value="Une pièce">Une pièce</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c3_2" value="Un livre">
+                            <label for="c3_2">Un livre</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c3_3" value="Un couteau">
+                            <label for="c3_3">Un couteau</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                            Quelle ville Batman défend-il ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c4_1" value="Gotham City">
+                            <label for="c4_1">Gotham City</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c4_2" value="Starling City">
+                            <label for="c4_2">Starling City</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c4_3" value="Le Joker">
+                            <label for="c4_3">Hell’s Kitchen</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                            Tim Burtin a réalisé deux Batman, qui jouait Batman
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c5_1">
+                            <label for="c5_1" value="Georges Clooney">Georges Clooney</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c5_2" value="Val Kilmer">
+                            <label for="c5_2">Val Kilmer</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c5_3" value="Mickael Keaton">
+                            <label for="c5_3">Mickael Keaton</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Dans son premier Batman (1989) Jack Nicholson jouait :
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c6_1" value="Le Pingouin">
+                            <label for="c6_1">Le Pingouin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c6_2" value="L’Homme Mystère">
+                            <label for="c6_2">L’Homme Mystère</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c6_3" value="Le Joker">
+                            <label for="c6_3">Le Joker</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Quel est le prénom des parents du jeune Bruce Wayne ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c7_1" value="Thomas et Martha">
+                            <label for="c7_1">Thomas et Martha</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c7_2" value="Elaine et Georges">
+                            <label for="c7_2">Elaine et Georges</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c7_3" value="Martha et James">
+                            <label for="c7_3">Martha et James</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Qui interprète le Joker en 2008 ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c7_1" value="Heath Legder">
+                            <label for="c8_1">Heath Legder</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c8_2" value="Heath Legder">
+                            <label for="c8_2">Heath Legder</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c8_3" value="Heath Legder">
+                            <label for="c8_3">Heath Legder</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        En quelle année Robin fait il sa première apparition ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c9_1" value="1940">
+                            <label for="c9_1">1940</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c9_2" value="1939">
+                            <label for="c9_2">1939</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c9_3" value="1941">
+                            <label for="c9_3">1941</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Qui est la fille de Batman et Catwoman (Earth - 2) ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c10_1" value="Oracle">
+                            <label for="c10_1">Oracle</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c10_2" value="Huntress">
+                            <label for="c10_2">Huntress</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c10_3" value="Black Canary">
+                            <label for="c10_3">Black Canary</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Qui est Jonathan Crane ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c11_1" value="L’Épouvantail">
+                            <label for="c11_1">L’Épouvantail</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c11_2" value="Le Joker">
+                            <label for="c11_2">Le Joker</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c11_3" value="Hugo Strange">
+                            <label for="c11_3">Hugo Strange</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Batman c’est aussi le nom d’une ville en...
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c12_1" value="Turquie">
+                            <label for="c12_1">Turquie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c12_2" value="Islande">
+                            <label for="c12_2">Islande</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c12_3" value="Allemagne">
+                            <label for="c12_3">Allemagne</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Qui a produit Batman en 1964 ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c7_1" value="Stanley Kubrick">
+                            <label for="c13_1">Stanley Kubrick</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c7_2" value="Andy Warhol">
+                            <label for="c13_2">Andy Warhol</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c7_3" value="Peter Jackson">
+                            <label for="c13_3">Peter Jackson</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Quel vilain apparaît pour la première fois dans le Batman 
+232 ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c14_1" value="Le Pingouin">
+                            <label for="c14_1">Le Pingouin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c14_2" value="Ra’s al Ghul">
+                            <label for="c14_2">Ra’s al Ghul</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c14_3" value="Poison Ivy">
+                            <label for="c14_3">Poison Ivy</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="quiz_content">
+                    <div class="question">
+                        <h4 class="question">
+                        Qui est l’interprète de Catwoman dans le nouveau 
+Batman de Matt Reeves (2022) ?
+                        </h4>
+                    </div>
+                    <div class="choix">
+                        <div>
+                            <input type="checkbox" id="c15_1" value="Emma Watson">
+                            <label for="c15_1">Emma Watson</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c15_2" value="Gigi Hadid">
+                            <label for="c15_2">Gigi Hadid</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c15_3" value="Lola Iolani Momoa">
+                            <label for="c15_3">Lola Iolani Momoa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c15_3" value="Zoë Kravitz">
+                            <label for="c15_3">Zoë Kravitz</label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="demarrage_quiz d-flex align-items-center flex-column" id="button_game">
+                    <h1 class="titre" style="font-size:2em; text-align: justify;">
+                        QUIZ NIVEAU 2 : CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?
+                    </h1>
+
+                    <div style="margin: auto; width: 80%;" class="d-flex flex-column align-items-center">
+                        <img src="./Assets/Illustrations/Game/Batgame2.png" width="100%">
+
+                        <button style="width: 200px ; height:60px;background: linear-gradient(150deg, #eddebf66, #890008);border: none;margin: 40px 0;color: white;outline: none;" id="demarer" onclick="faire_quiz()">
+                            DEMARRER LE QUIZZ
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- pied de la page -->
+
+    <footer id="citation" class="container-fluid">
+        <div class="home_page_content">
+            <div class="footer_content">
+                <img src="./Assets/Logos/icon_WB.png" alt="">
+                <p>
+                    Ce projet respecte l'univers cinématographique des films Batman récents.Version Nolan & Snyder & Reeves
+                </p>
+
+            </div>
+
+        </div>
+        
+        <div class="footer_images">
+            <img src="./Assets/Logos/logo_sayna_white.png" alt="">
+            <img src="./Assets/Logos/icon_x.png" alt="">
+            <img src="./Assets/Logos/icon_DC.png" alt="">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+
+    </footer>
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        
+        // function faire_quiz(){
+        //     let resultat;
+        //     let tout_resultat = [];
+
+        //      for (var i = 1; i < 16; i++) {
+                    
+        //          for (var j = 1; j < 4; j++) {
+                        
+        //              if("c"+i+"_"+j.checked == true)
+        //              {
+        //                  resultat = document.getElementById("c"+i+"_"+j).value;
+        //                  alert("manddqf")
+        //              }
+                         
+
+        //          }
+
+        //          tout_resultat[i] = resultat;
+
+
+        //      }
+
+
+
+        //     }
+
+
+    </script>
+</body>
+</html>
