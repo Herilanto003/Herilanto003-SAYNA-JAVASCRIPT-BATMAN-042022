@@ -1,0 +1,68 @@
+/* LA PAGE DE GAME */
+/* J UTILISE LA CSS DE L INDEX POUR CODER MOINS */
+.home_page{
+    background-image: url("../Assets/Illustrations/Game/Batgame1.png");
+
+}
+/* la première section de la page game */
+
+
+section#intro div.image_droite{
+    width: 180px;
+    position: absolute;
+    right: -13%;
+    
+}
+
+section#intro{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+section#intro div.intro_content{
+    width: 100%;
+    text-align: justify;
+}
+div.intro_content h1{
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+
+}
+/*partie de la quizz*/
+section#quiz{
+    background-color: #000000;
+    color: white;
+}
+section#quiz div.quiz_title{
+    padding-top: 100px;
+}
+section#quiz div.quiz_content{
+    margin: 40px 0;
+    width: 50%;
+}
+section#quiz div.quiz_content h4{
+    padding-bottom: 40px;
+}
+section#quiz div.quiz_content div.choix div{
+    margin: 10px 0;
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}section#quiz div.quiz_content div.choix div label{
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+section#quiz div.quiz_content div.choix div input{
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+    margin: 0 10px;
+}

@@ -1,0 +1,455 @@
+/* les couleurs utilises */
+:root{
+    --text-color : #ffffff;
+    --bg-color : #000000;
+
+}
+/* body */
+body{
+    overflow-x: hidden;
+}
+
+/* style pour toute les titre */
+h1.titre{
+    color: #ffffff;
+    margin-left: -15%;
+    opacity: 0;
+
+}
+
+/* scroll de la page */
+html{
+    scroll-behavior: smooth;
+}
+
+/*classe a ajouter*/
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*******************************
+***** style pour la première section 
+**********************************/
+
+
+
+.home_page{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/Illustrations/Home/Bathome1.png");
+    background: linear-gradient();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+div.home_page_content{
+    border-right: 4px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 90%;
+    margin: auto;
+    opacity: 0;
+        
+}
+div.home_page_content header{
+    padding: auto 0;
+}
+
+/* logo */
+.home_page header img{
+    width: 150px;
+    height: 50px;
+    z-index: 1;
+
+}
+.home_page header img::after{
+    content: "";
+    width: 150px;
+    height: 50px;
+    background-color: yellow;
+    z-index: 2;
+
+}
+
+/* les liens */
+.home_page header nav a{
+    color: var(--text-color);
+    font-size: 1.7rem;
+
+}
+
+/* la première section de la page home */
+section#intro{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+section#intro div{
+    width: 60%;
+    text-align: center;
+
+}
+section#intro div.image_droite{
+    width: 180px;
+    position: absolute;
+    right: -14.7%;
+    
+}
+section#intro div.image_droite i{
+    color:#ffffff;
+    font-size: 1.5em;
+    padding: 5px 0;
+    
+}
+section#intro div.image_droite div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section#intro div p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+section#intro div h4{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+section#intro div.btn_intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section#intro div.btn_intro a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: linear-gradient(150deg, #eddebf66, #890008);
+    width: 42%;
+    padding: 18px;
+}
+section#intro div.btn_intro a:hover{
+    background: linear-gradient(150deg, #eddebfff, #890008);
+}
+
+
+div.fleche{
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* pour la deuxieme section c est la section du cinéma */
+section#cinema{
+    background-color: black;
+
+}
+section#cinema div.home_page_content{
+    padding: 80px;
+    padding-top: 180px;
+    color: #ffffff;
+    text-align: justify;
+
+}
+section#cinema div.home_page_content div p{
+    font-size: 1.2rem;
+
+}
+/* l image de trois batman */
+section#cinema div.image_trois_batman{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* section pour la slide */
+section#masque{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+section#masque div.home_page_content{
+    z-index: 2;
+    height: 100%;
+}
+section#masque div#slider_primo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+section#masque div#slider_primo img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* pour la section némesis */
+section#nemesis{
+    background-color: black;
+
+}
+section#nemesis div.home_page_content{
+    padding: 80px;
+    padding-top: 80px;
+    color: #ffffff;
+    text-align: justify;
+
+}
+section#nemesis div.home_page_content div p{
+    font-size: 1.2rem;
+
+}
+/* l image de trois ennemis de batman */
+section#nemesis div.image_enemis_batman{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* la section multimedia */
+section#multimedia{
+    background-color: #000000;
+    box-sizing: border-box;
+
+}
+section#multimedia div#slider{
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section#multimedia div#slider div.slider_content{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    overflow: hidden;
+}
+section#multimedia div#slider div.slider_content div.slider_element{
+    width: 100%;
+    margin: auto;
+    margin-left: -0%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+section#multimedia div#slider div.slider_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section#multimedia div#slider div.slider_content span{
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #19587d;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+section#multimedia div#slider div.slider_content span h4{
+    font-size: 1rem;
+}
+section#multimedia div#slider div.slider_content span h4 span{
+    color: #ffff00;
+    border: none;
+    padding: 0;
+    
+}
+section#multimedia div#slider div.slider_content span p.sous-titre{
+    font-size: 1.3rem;
+}
+section#multimedia div#slider div.slider_content span p.description{
+    line-height: 16px;
+}
+
+
+section#multimedia div#video{
+    width: 100%;
+}
+section#multimedia video{
+    width: 100%;
+}
+
+
+
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+/* pour la section du contact */
+section#contact{
+    width: 100%;
+    /* background-color: #000000; */
+    background: linear-gradient(132deg,#19587d,#000000);
+}
+section#contact div.contact_formulaire{
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+section#contact div.contact_formulaire{
+    position: relative;
+}
+section#contact div.contact_formulaire h1{
+    font-size: 1.7em;
+    color: #ffffff;
+    padding: 20px 0;
+}
+section#contact div.contact_formulaire div.formulaire_contenu{
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+section#contact div.contact_formulaire div.formulaire_contenu input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    background-color: transparent;
+    outline: none;
+    width:100%;
+    color: #ffffff;
+}
+section#contact div.contact_formulaire div.formulaire_contenu input[type="checkbox"]{
+    position: absolute;
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+    left: 15%;
+}
+/* section#contact div.contact_formulaire div.formulaire_contenu select{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    width:100%;
+    color: #ffffff;
+} */
+section#contact div.contact_formulaire div.formulaire_contenu label{
+    position: absolute;
+    color: #c4c4c4;
+    font-size: 1.2em;
+    text-align:justify;
+}
+section#contact div.contact_formulaire div.formulaire_contenu div.boutons button{
+    width: 20%;
+    padding: 10px 0;
+    outline: none;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+section#contact div.contact_formulaire div.formulaire_contenu div.boutons button:hover{
+    background-color: #19587d;
+}
+section#contact div.contact_formulaire div.formulaire_contenu button[type="submit"]{
+    width: 250px;
+    height: 70px;
+    color: #ffffff;
+    background: linear-gradient(120deg,#eddebf91,#89000891);
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+
+}
+section#contact div.contact_formulaire div.formulaire_contenu button[type="submit"]:hover{
+    background: linear-gradient(120deg,#eddebfff,#890008ff);
+
+}
+
+
+/* pour la citation */
+section#citation{
+    border-top: 2px solid #c4c4c491;
+    background-color: #0d0e09;
+    color : #ffffff;
+    text-align: center;
+    height: 500px;
+    position: relative;
+}
+section#citation div.primo_content{
+    height: 500px;
+
+}
+section#citation div.primo_content div.citation_content{
+    display: flex;
+    justify-content: space-between;
+}
+section#citation div.primo_content div.citation_texte{
+    width: 70%;
+    margin-top: 140px;
+    background-color: transparent;
+}
+section#citation div.primo_content div.deuxieme_image{
+    margin-top: 300px;
+}
+
+/* pied de la page */
+footer{
+    width: 100%;
+    background-color: #0d0e09;
+    color: white;
+    padding-bottom: 40px;
+
+}
+footer div.footer_content {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content:center;
+}
+footer div.footer_content img{
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+footer div.footer_images{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div.footer_images img,
+footer div.footer_images i{
+    margin-left: 20px;
+}
+footer div.footer_images i{
+    font-size: 2rem;
+}
