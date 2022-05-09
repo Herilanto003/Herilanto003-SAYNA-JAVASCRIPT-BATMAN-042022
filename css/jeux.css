@@ -1,0 +1,107 @@
+/* LA PAGE DE GAME */
+/* J UTILISE LA CSS DE L INDEX POUR CODER MOINS */
+.home_page{
+    background-image: url("../Assets/Illustrations/Game/Batgame1.png");
+
+}
+section#quiz{
+
+    background: #000000;
+
+}
+div.container-globale{
+
+    width: 100%;
+    padding: 80px 0;
+    color: white;
+
+
+}
+div.container-globale form h2{
+
+    text-align: justify;
+    padding: 40px 0;
+
+}
+div.container-globale form div.question-block{
+
+    margin: 40px 0;
+    box-sizing: border-box;
+    width: 60%;
+
+}
+div.container-globale form div.question-block div{
+
+    background-color: #747474;
+    height: 40px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding-left: 10px;
+
+}
+div.container-globale form div.question-block h4{
+
+    margin-bottom: 20px;
+
+}
+div.container-globale form div.question-block div label{
+
+    margin-left: 10px;
+    line-height: 40px;
+
+}
+div.container-globale form div.question-block div input{
+
+    width: 25px;
+    height: 25px;
+    transform: translateY(7px);
+
+}
+div.status_game{
+
+    margin-top:80px;
+    width: 100%;
+
+}
+div.status_game img{
+
+    margin-top: 40px;
+
+}
+div.status_game h1{
+    
+    text-align: justify;
+
+}
+div.status_game button{
+
+    display: block;
+    border: none;
+    background: linear-gradient(132deg,white,red);
+    width: 300px;
+    height: 60px;
+    font-size: 1.3rem;
+    color: black;
+    outline: none;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+section#quiz div.notification_quiz{
+
+    width: 80%;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(132deg,white,#19587d);
+    transform: scale(0.0);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    z-index: 21;
+
+}
