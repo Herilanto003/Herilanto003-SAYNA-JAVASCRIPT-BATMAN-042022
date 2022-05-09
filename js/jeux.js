@@ -29,8 +29,8 @@ const reponse_correcte = [
     "a",
     "b",
     "a",
-    "b",
     "a",
+    "b",
     "b",
     "d"
 ];
@@ -38,6 +38,30 @@ const formulaire= document.querySelector("form");
 let reponse_user = [];
 let reponse_check = [];
 let nombre_erreur;
+const tout_input = document.querySelectorAll("input");
+
+
+for (var i = 0; i < tout_input.length; i++) {
+    
+    tout_input[i].addEventListener("click",(e)=>{
+
+        e.target.parentNode.style.backgroundColor = "#19587d";
+        let input_disable = [...document.querySelectorAll(`input[name=${e.target.name}]`)];
+        // for (var i = 0; i < input_disable.length; i++) {
+        //     input_disable[i].setAttribute("disabled","");
+        // }
+
+       let except = input_disable.filter(elem => elem != e.target)
+       for(let i=0; i<except.length; i++)
+       {
+
+            except[i].setAttribute("disabled","");
+
+       }
+
+    })
+
+}
 
 
 formulaire.addEventListener("submit",(e) => {
