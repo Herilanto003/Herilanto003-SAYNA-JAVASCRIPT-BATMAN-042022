@@ -45,19 +45,42 @@ for (var i = 0; i < tout_input.length; i++) {
     
     tout_input[i].addEventListener("click",(e)=>{
 
-        e.target.parentNode.style.backgroundColor = "#19587d";
-        let input_disable = [...document.querySelectorAll(`input[name=${e.target.name}]`)];
-        // for (var i = 0; i < input_disable.length; i++) {
-        //     input_disable[i].setAttribute("disabled","");
-        // }
+        console.log(e.target.value)
+        if(e.target.checked == false)
+        {
 
-       let except = input_disable.filter(elem => elem != e.target)
-       for(let i=0; i<except.length; i++)
-       {
+            e.target.parentNode.style.backgroundColor = "#747474";
+            let input_disable = [...document.querySelectorAll(`input[name=${e.target.name}]`)];
+            // for (var i = 0; i < input_disable.length; i++) {
+            //     input_disable[i].setAttribute("disabled","");
+            // }
+           for(let i=0; i<input_disable.length; i++)
+           {
 
-            except[i].setAttribute("disabled","");
+                input_disable[i].disabled = false;
 
-       }
+           }
+
+        }else{
+
+            e.target.parentNode.style.backgroundColor = "#19587d";
+            let input_disable = [...document.querySelectorAll(`input[name=${e.target.name}]`)];
+            // for (var i = 0; i < input_disable.length; i++) {
+            //     input_disable[i].setAttribute("disabled","");
+            // }
+
+           let except = input_disable.filter(elem => elem != e.target)
+           for(let i=0; i<except.length; i++)
+           {
+
+                except[i].setAttribute("disabled","");
+
+           }
+
+
+        }
+
+
 
     })
 
